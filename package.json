@@ -6,7 +6,8 @@
   "scripts": {
     "start": "gulp",
     "prepublish": "gulp transpile",
-    "test": "eslint lib/**"
+    "lint": "eslint lib/** && echo Lint Passed ❤",
+    "test": "gulp mocha"
   },
   "files": [
     "dist"
@@ -60,6 +61,7 @@
     "fs-extra": "^0.30.0",
     "gridfs-stream": "^1.1.1",
     "handlebars": "^4.0.5",
+    "http-status": "^0.2.0",
     "koa": "^2.0.0",
     "koa-body": "^1.4.0",
     "koa-compress": "^2.0.0",
@@ -73,14 +75,29 @@
     "query-string": "^4.1.0"
   },
   "devDependencies": {
+    "babel-cli": "6.16.0",
+    "babel-core": "6.16.0",
     "babel-eslint": "^6.0.4",
     "babel-plugin-syntax-async-functions": "^6.8.0",
     "babel-plugin-transform-async-to-generator": "^6.8.0",
     "babel-preset-es2015-node": "^4.0.2",
+    "chai": "^3.4.1",
     "eslint": "^3.0.0",
     "eslint-config-default": "^0.2.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
-    "gulp-cached": "^1.1.0"
+    "gulp-cached": "^1.1.0",
+    "gulp-env": "^0.4.0",
+    "gulp-istanbul": "1.1.1",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-mocha": "3.0.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "isparta": "4.0.0",
+    "mocha": "3.1.0",
+    "run-sequence": "^1.1.5",
+    "supertest": "2.0.0",
+    "supertest-as-promised": "4.0.0"
   }
 }
