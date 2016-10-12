@@ -6,3 +6,4 @@ node_js:
 sudo: false
 git:
   depth: 1
+services: mongodb
