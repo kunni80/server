@@ -36,5 +36,4 @@ describe('## User APIs', () => {
         .catch(done);
     });
   });
-
 });
